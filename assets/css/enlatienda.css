@@ -145,10 +145,51 @@ button:active.owl-next {
   background-color: transparent;
 }
 
+.btn.btn-orange[href]:hover,
+.btn.btn-orange[href]:focus,
+.btn.btn-orange[href]:active,
+.btn.btn-orange[type]:hover,
+.btn.btn-orange[type]:focus,
+.btn.btn-orange[type]:active {
+  box-shadow: 0 4px 11px rgba(119, 131, 143, 0.35);
+}
+
+.btn.btn-orange:not(label.btn),
+.btn.btn-orange:not(label.btn):not([href]):not(:disabled):not(.disabled),
+.btn.btn-orange:not([href]),
+.btn.btn-orange:not([href]):not([href]):not(:disabled):not(.disabled) {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.btn.btn-orange:hover {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.btn.btn-orange {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
 @media (max-width: 767.98px) {
+  body {
+    padding-top: 110px;
+  }
   .rounded-icon {
     height: 2.1rem;
     width: 2.1rem;
     font-size: 1.2rem;
+  }
+  .text-center-sm {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+  }
+  .mr-auto-sm {
+    margin-right: auto;
   }
 }
