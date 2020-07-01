@@ -1,5 +1,5 @@
 body {
-  padding-top: 60px;
+  padding-top: 50px;
   background: rgb(236, 239, 244);
   background: radial-gradient(
     circle,
@@ -49,9 +49,9 @@ body {
   color: #35326b;
 }
 
-/* .navbar {
-  padding: 1.8rem 1rem 1.8rem 1rem !important;
-} */
+.navbar {
+  padding: 0.2rem 1rem 0.2rem 1rem !important;
+}
 
 .sisuz-link {
   text-decoration: none;
@@ -145,6 +145,10 @@ button:active.owl-next {
   background-color: transparent;
 }
 
+.list-group-item {
+  padding: 0.2rem 1.25rem !important;
+}
+
 .btn.btn-orange[href]:hover,
 .btn.btn-orange[href]:focus,
 .btn.btn-orange[href]:active,
@@ -191,5 +195,8 @@ button:active.owl-next {
   }
   .mr-auto-sm {
     margin-right: auto;
+  }
+  .navbar {
+    padding: 0.2rem 1rem 0.4rem 1rem !important;
   }
 }
