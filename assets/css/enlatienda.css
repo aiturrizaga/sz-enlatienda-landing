@@ -26,6 +26,15 @@ body {
   );
 }
 
+.font-size-0_3rem {
+  font-size: .7rem;
+}
+
+.font-size-1xs {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
 .rounded-icon {
   height: 2.3rem;
   width: 2.3rem;
@@ -146,7 +155,8 @@ button:active.owl-next {
 }
 
 .list-group-item {
-  padding: 0.2rem 1.25rem !important;
+  padding: 0.1rem 1.25rem !important;
+  font-size: .7rem !important;
 }
 
 .btn.btn-orange[href]:hover,
