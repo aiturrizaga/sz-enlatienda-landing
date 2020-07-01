@@ -27,23 +27,23 @@ body {
 }
 
 .font-size-0_3rem {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .font-size-1xs {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 .rounded-icon {
-  height: 2.3rem;
-  width: 2.3rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .rounded-icon.dark {
@@ -156,7 +156,7 @@ button:active.owl-next {
 
 .list-group-item {
   padding: 0.1rem 1.25rem !important;
-  font-size: .7rem !important;
+  font-size: 0.7rem !important;
 }
 
 .btn.btn-orange[href]:hover,
@@ -188,9 +188,17 @@ button:active.owl-next {
   border-color: #ff6600;
 }
 
+.footer-fixed {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 @media (max-width: 767.98px) {
   body {
-    padding-top: 110px;
+    padding-top: 97px;
   }
   .rounded-icon {
     height: 2.1rem;
@@ -207,6 +215,9 @@ button:active.owl-next {
     margin-right: auto;
   }
   .navbar {
-    padding: 0.2rem 1rem 0.4rem 1rem !important;
+    padding: 0.2rem 1rem 0.5rem 1rem !important;
+  }
+  .footer-fixed {
+    position: relative;
   }
 }
