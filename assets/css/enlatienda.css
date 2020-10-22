@@ -1,3 +1,9 @@
+:root {
+  --color_primary: #640a96;
+  --color_secondary: #ff3b72;
+  --color_success: #00eebd;
+}
+
 body {
   padding-top: 50px;
   background: rgb(236, 239, 244);
@@ -6,6 +12,10 @@ body {
     rgba(236, 239, 244, 1) 0%,
     rgba(223, 227, 230, 1) 100%
   );
+}
+
+.bg-custom-primary {
+  background: var(--color_primary) !important;
 }
 
 .bg-gradient-primary {
@@ -46,6 +56,10 @@ body {
   font-size: 1.1rem;
 }
 
+.rounded-icon.border {
+  border: 2px solid #ffffff !important;
+}
+
 .rounded-icon.dark {
   border: 1px solid #000000;
   background-color: #000000;
@@ -53,7 +67,6 @@ body {
 }
 
 .rounded-icon.white {
-  border: 1px solid #ffffff;
   background-color: #ffffff;
   color: #35326b;
 }
@@ -62,9 +75,13 @@ body {
   padding: 0.2rem 1rem 0.2rem 1rem !important;
 }
 
+.text-custom-success {
+  color: var(--color_success) !important;
+}
+
 .sisuz-link {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color_success);
 }
 
 .sisuz-link:hover {
@@ -172,20 +189,27 @@ button:active.owl-next {
 .btn.btn-orange:not(label.btn):not([href]):not(:disabled):not(.disabled),
 .btn.btn-orange:not([href]),
 .btn.btn-orange:not([href]):not([href]):not(:disabled):not(.disabled) {
-  background-color: #ff6600;
-  border-color: #ff6600;
+  background-color: var(--color_secondary);
+  border-color: var(--color_secondary);
 }
 
 .btn.btn-orange:hover {
   color: #ffffff;
-  background-color: #ff6600;
-  border-color: #ff6600;
+  background-color: var(--color_secondary);
+  border-color: var(--color_secondary);
 }
 
 .btn.btn-orange {
   color: #ffffff;
-  background-color: #ff6600;
-  border-color: #ff6600;
+  background-color: var(--color_secondary);
+  border-color: var(--color_secondary);
+}
+
+.bg-image-footer {
+  background-image: url('../images/logos/carrito-watermark.png');
+  background-repeat: no-repeat;
+  background-size: 154px 100px;
+  background-position: bottom right;
 }
 
 .footer-fixed {
